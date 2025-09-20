@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S N Tejaswi | Personal Blog</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #6c63ff, #00c6ff);
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+      position: relative;
+    }
+
+    header h1 { font-size: 3rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; }
+
+    header .contact-links {
+      margin-top: 15px;
+    }
+
+    header .contact-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    header .contact-links a:hover { color: #ffeb3b; }
+
+    /* Navbar */
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      padding: 15px 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover { background: #666; }
+
+    .container { width: 85%; margin: 30px auto; }
+
+    section {
+      margin-bottom: 50px;
+      padding: 25px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #6c63ff;
+    }
+
+    /* Skills as buttons */
+    #skills {
+      text-align: center;
+    }
+
+    #skills .skill-btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      border-radius: 25px;
+      border: none;
+      background: #6c63ff;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+    }
+
+    #skills .skill-btn:hover {
+      transform: scale(1.1);
+      background: #00c6ff;
+    }
+
+    /* Projects Section */
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #fff;
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .project-card h3 { color: #6c63ff; margin-bottom: 15px; font-size: 1.3rem; }
+    .project-card p { font-size: 0.95rem; color: #555; margin-bottom: 20px; }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    .github-btn {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #6c63ff;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .github-btn:hover {
+      background: #00c6ff;
+      transform: translateY(-3px);
+    }
+
+    /* Blog */
+    .blog-post {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-left: 5px solid #6c63ff;
+      background: #fafafa;
+      border-radius: 8px;
+    }
+
+    .blog-post h3 { margin-bottom: 10px; color: #6c63ff; }
+    .btn {
+      display: inline-block;
+      padding: 8px 12px;
+      margin-top: 10px;
+      background: #6c63ff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover { background: #00c6ff; transform: translateY(-2px); }
+
+    .back-btn { display: block; margin: 20px auto 0; text-align: center; }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Responsive */
+    @media(max-width:800px){
+      .projects-grid { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>S N Tejaswi</h1>
+    <p>B.Tech (AI & ML) | MERN Developer | Blogger</p>
+    <div class="contact-links">
+      <a href="mailto:tejaswisiram2604@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/s-n-tejaswi-teju" target="_blank">LinkedIn</a>
+      <a href="https://github.com/SNTejaswi" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm <b>S N Tejaswi</b>, a final-year B.Tech student specializing in 
+        <b>Artificial Intelligence & Machine Learning</b>. I’m passionate about 
+        coding, MERN stack development, and content writing. My internships with 
+        IBM SkillsBuild, Infosys Springboard, and InAmigos Foundation have helped me 
+        combine technical expertise with strong communication.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <button class="skill-btn">AI & Machine Learning</button>
+      <button class="skill-btn">Python, JavaScript</button>
+      <button class="skill-btn">MERN Stack Development</button>
+      <button class="skill-btn">Data Analytics</button>
+      <button class="skill-btn">Blog & Content Writing</button>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Disease Prediction System</h3>
+          <p>Web-based tool predicting diseases using ML algorithms like Decision Tree & Random Forest.</p>
+          <a href="https://github.com/SNTejaswi/diease-prediction" target="_blank" class="github-btn">GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Titanic Survival Prediction</h3>
+          <p>ML model predicting passenger survival using Logistic Regression & Decision Trees.</p>
+          <a href="https://github.com/SNTejaswi/Titanic_Survival_Prediction" target="_blank" class="github-btn">GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Social Media Sentiment Analysis</h3>
+          <p>Analyzed Twitter sentiments using TextBlob and visualized sentiment trends.</p>
+          <a href="https://github.com/SNTejaswi/social_media_sentimental_analysis" target="_blank" class="github-btn">GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Expense Tracker</h3>
+          <p>Full-stack MERN app to track user expenses, categorize, and visualize them.</p>
+          <a href="https://github.com/SNTejaswi/Expense-Tracker-Project-in-Python" target="_blank" class="github-btn">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+      <h2>My Blog</h2>
+
+      <div class="blog-post">
+        <h3>My Journey in AI & ML</h3>
+        <p>
+          From solving coding problems to internships with IBM and Infosys, 
+          my journey in AI & ML has been full of learning, challenges, and growth.
+        </p>
+        <a href="#ai-journey" class="btn">Read More</a>
+      </div>
+
+      <div class="blog-post">
+        <h3>MERN Stack Development</h3>
+        <p>
+          Building full-stack web apps has been exciting—combining frontend creativity 
+          with backend logic to create real-world solutions.
+        </p>
+        <a href="#mern-dev" class="btn">Read More</a>
+      </div>
+
+      <div class="blog-post">
+        <h3>Internship Experiences</h3>
+        <p>
+          My internships taught me teamwork, problem-solving, and balancing technical 
+          projects with effective communication.
+        </p>
+        <a href="#internships" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- Detailed Blog Sections -->
+    <section id="ai-journey">
+      <h2>My Journey in AI & ML</h2>
+      <p>
+        I started my AI/ML journey by solving coding problems on LeetCode, CodeChef, and GFG. 
+        Over time, I explored machine learning algorithms, data preprocessing, and model evaluation.  
+        During my IBM SkillsBuild internship, I built hands-on ML projects, gaining practical knowledge in 
+        Python libraries like Scikit-learn, Pandas, and NumPy.  
+        My focus is on building real-world solutions like disease prediction systems and sentiment analysis tools.
+      </p>
+      <a href="#blog" class="btn back-btn">⬅ Back to Blog</a>
+    </section>
+
+    <section id="mern-dev">
+      <h2>MERN Stack Development</h2>
+      <p>
+        I explored MERN stack development to strengthen my web development skills.  
+        I built a full-stack Expense Tracker where users can log expenses, categorize them, 
+        and view statistics.  
+        Technologies used: MongoDB for storage, Express.js & Node.js for backend, and React for the frontend.  
+        This helped me connect frontend creativity with backend logic effectively.
+      </p>
+      <a href="#blog" class="btn back-btn">⬅ Back to Blog</a>
+    </section>
+
+    <section id="internships">
+      <h2>Internship Experiences</h2>
+      <p>
+        My internships shaped my learning path.  
+        - At APSSDC, I worked on AI/ML and Data Analytics, building dashboards in Power BI.  
+        - At Apexplanet, I designed responsive web pages and integrated APIs with Node.js.  
+        - With InAmigos Foundation, I wrote blogs and created SEO-based content.  
+        These experiences taught me teamwork, communication, and the importance of solving real-world problems.
+      </p>
+      <a href="#blog" class="btn back-btn">⬅ Back to Blog</a>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 S N Tejaswi | Personal Blog</p>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    const links = document.querySelectorAll('nav a, .btn');
+    links.forEach(link => {
+      link.addEventListener('click', e => {
+        if (link.getAttribute('href').startsWith("#")) {
+          e.preventDefault();
+          document.querySelector(link.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
